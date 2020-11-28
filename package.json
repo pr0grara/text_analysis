@@ -1,0 +1,26 @@
+{
+  "name": "text_analytics",
+  "version": "1.0.0",
+  "description": "Text analytics powered by Azure for LOXZ Inc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pr0grara/text_analysis.git"
+  },
+  "author": "Ara Baghdassarian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pr0grara/text_analysis/issues"
+  },
+  "homepage": "https://github.com/pr0grara/text_analysis#readme",
+  "dependencies": {
+    "@azure/ai-text-analytics": "^5.1.0-beta.1",
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.10.17",
+    "nodemon": "^2.0.6"
+  }
+}
