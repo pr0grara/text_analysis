@@ -1,5 +1,6 @@
-const textToAnalyze = ["crm is a great tool that I would like to expand upon"];
+const textToAnalyze = require("../data");
 
+console.log(textToAnalyze);
 async function sentimentAnalysis(client) {
   const sentimentInput = textToAnalyze;
   const sentimentResult = await client.analyzeSentiment(sentimentInput);

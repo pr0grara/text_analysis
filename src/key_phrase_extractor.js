@@ -1,7 +1,7 @@
+const textToAnalyze = require("../data");
+
 async function keyPhraseExtraction(client) {
-  const keyPhrasesInput = [
-    "CRM is a great tool that I would like to expand upon",
-  ];
+  const keyPhrasesInput = textToAnalyze;
   const keyPhraseResult = await client.extractKeyPhrases(keyPhrasesInput);
 
   keyPhraseResult.forEach((document) => {

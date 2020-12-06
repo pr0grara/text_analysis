@@ -1,7 +1,7 @@
+const textToAnalyze = require("../data");
+
 async function linkedEntityRecognition(client) {
-  const linkedEntityInput = [
-    "CRM is a great tool that I would like to expand upon",
-  ];
+  const linkedEntityInput = textToAnalyze;
   const entityResults = await client.recognizeLinkedEntities(linkedEntityInput);
 
   entityResults.forEach((document) => {

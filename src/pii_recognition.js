@@ -1,7 +1,7 @@
-
+const textToAnalyze = require("../data");
 
 async function piiRecognition(client) {
-  const documents = ["The employee's phone number is (555) 555-5555."];
+  const documents = textToAnalyze;
 
   const results = await client.recognizePiiEntities(documents, "en");
   for (const result of results) {

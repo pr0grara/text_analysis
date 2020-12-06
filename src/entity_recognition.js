@@ -1,5 +1,7 @@
+const textToAnalyze = require("../data");
+
 async function entityRecognition(client) {
-  const entityInputs = ["crm is a great tool that I would like to expand upon"];
+  const entityInputs = textToAnalyze;
   const entityResults = await client.recognizeEntities(entityInputs);
 
   entityResults.forEach((document) => {
