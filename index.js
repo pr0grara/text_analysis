@@ -23,8 +23,8 @@ async function run() {
   // await sentimentAnalysis(textAnalyticsClient);
   // await entityRecognition(textAnalyticsClient);
   // await linkedEntityRecognition(textAnalyticsClient);
-  await keyPhraseExtraction(textAnalyticsClient);
-  // await piiRecognition(textAnalyticsClient);
+  // await keyPhraseExtraction(textAnalyticsClient);
+  await piiRecognition(textAnalyticsClient);
 }
 run()
 
